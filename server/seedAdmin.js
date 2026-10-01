@@ -1,4 +1,4 @@
-// Run once: node seedAdmin.js  -> creates the first admin account
+require('dns').setServers(['8.8.8.8', '8.8.4.4']);
 require('dotenv').config();
 const mongoose = require('mongoose');
 const User = require('./models/User');
